@@ -26,19 +26,33 @@
                 <th>Read</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="tbodyID">
               <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
-                  <input
-                    type="checkbox"
-                    name="read"
-                    id="readLibraryCheckbox"
-                    checked
-                    disabled
-                  />
-                </td>
+                <form id="formID">
+                  <td>
+                    <label for="title"></label>
+                    <input type="text" name="title" id="titleID">
+                  </td>
+
+                  <td>
+                    <label for="author"></label>
+                    <input type="text" name="author" id="authorID">
+                  </td>
+
+                  <td>
+                    <label for="read"></label>
+                    <input
+                      type="checkbox"
+                      name="read"
+                      id="readLibraryCheckbox"
+                    />
+                  </td>
+
+                  <td>
+                    <input id="buttonID" type="submit">
+                  </td>
+                </form>
+
               </tr>
             </tbody>
           </table>
